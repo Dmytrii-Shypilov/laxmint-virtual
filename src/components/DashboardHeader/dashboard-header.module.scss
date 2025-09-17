@@ -1,0 +1,26 @@
+.vidget {
+    padding: 15px;
+    border-radius: var(--vidget-radius);
+    box-shadow: var(--vidget-shadow);
+}
+
+.portfolio {
+    @extend .vidget;
+    position: relative;
+    width: 400px;
+}
+
+.btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.panelIcons {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+}
