@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import { pdf } from "@react-pdf/renderer";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
-import MyDocument from "./Document/MyDocument";
+import MyDocument from "./MyDocument";
+
+
 const PdfGeneratorViewer = () => {
   const [pdfUrl, setPdfUrl] = useState(null);
   const [link, setLink] = useState(null);
@@ -35,7 +37,6 @@ const PdfGeneratorViewer = () => {
           style={{
             height: "300px",
             width: "100%",
-            // margin: "0 auto",
             overflowY: "auto",
             border: "1px solid gray",
             borderRadius: 3,
